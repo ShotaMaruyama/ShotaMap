@@ -3,8 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <h1>すごい地図</h1>
-  </body>
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiMTIwMjY2MCIsImEiOiJjaml2M2g2NWIyZzJpM3Zxc2d4NjZneWtsIn0.EVVHVWDQFVONCIKUKGD2aA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
+</body>
 </html>
